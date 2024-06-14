@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #808090;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.content {
+background-color: #808090;
+    color: white;
+    padding: 140px 0;
+    width: 200px;
+    display: flex;
+}
+
+section {
+color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Dashboard</h1>
+    <nav>
+        <ul>
+            <li><a href="http://localhost:9899/api/users/user-details">Account Statement</a></li>
+            <li><a href="http://localhost:9899/funds-transfer">Funds Transfer</a></li>
+            <li><a href="http://localhost:9899/profile">User Profile</a></li>
+            <li><a href="http://localhost:9899/change-password">Change UserID Password</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content">
+
+    <ul>
+        <section id="account-details">
+            <a href="http://localhost:9899/api/users/user-details">Account Details</a>
+            <!-- Account details content -->
+
+        </section>
+
+        <section id="account-summary">
+            <a href="http://localhost:9899/account-summary/1">Account summary</a>
+            <!-- Account summary content -->
+        </section>
+
+        <section id="funds-transfer">
+            <a href="http://localhost:9899">Funds Transfer</a>
+                <!-- Funds transfer content -->
+        </section>
+
+        <section id="account-statement">
+            <a href="http://localhost:9899/profile">Account Statement</a>
+            <!-- Account statement content -->
+        </section>
+    </ul>
+</div>
+</body>
+</html>

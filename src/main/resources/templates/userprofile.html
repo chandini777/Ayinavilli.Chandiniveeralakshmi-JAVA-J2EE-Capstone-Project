@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Statement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        form {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        form input[type="date"], form input[type="submit"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Account Statement</h1>
+    <form id="statementForm">
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required>
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate" required>
+        <input type="submit" value="Submit">
+    </form>
+    <table id="accountTable">
+        <thead>
+        <tr>
+            <th>Account Number</th>
+            <th>Name</th>
+            <th>Account Type</th>
+            <th>Balance</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Sample Data -->
+        <tr>
+            <td>12345678</td>
+            <td>John Doe</td>
+            <td>Savings</td>
+            <td>$10,000.00</td>
+        </tr>
+        <tr>
+            <td>87654321</td>
+            <td>Jane Smith</td>
+            <td>Checking</td>
+            <td>$5,000.00</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+</script>
+</body>
+</html>
